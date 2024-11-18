@@ -21,6 +21,7 @@ def main():
                 return
         screen.fill("black")
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
         ms_dt = game_clock.tick(60)
         dt = ms_dt / 1000   # track dt in seconds
